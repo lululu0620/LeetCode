@@ -31,21 +31,18 @@
 //   / \  / \
 // 4->5->6->7 -> NULL
 
-public class Solution {
-     public void connect(TreeLinkNode root) {
-         if (root == null) return;
-         Queue<TreeLinkNode> queue = new LinkedList<>();
-         queue.offer(root);
-         while (!queue.isEmpty()) {
-             List<TreeLinkNode> temp = new ArrayList<>();
-             while (!queue.isEmpty()) temp.add(queue.poll());
-             for (int i = 0; i < temp.size(); i++) {
-                 TreeLinkNode node = temp.get(i);
-                 if (i != temp.size()-1) node.next = temp.get(i+1);
-                 else node.next = null;
-                 if (node.left != null) queue.offer(node.left);
-                 if (node.right != null) queue.offer(node.right);
-             }   
-         }
-     }
- }
+public void connect(TreeLinkNode root) {
+        if (root == null) return;
+        Queue<TreeLinkNode> queue = new LinkedList<>();
+        queue.offer(root);
+        while (!queue.isEmpty()) {
+            int n = queue.size();
+            while (n > 0) {
+                TreeLinkNode node = queue.poll();
+                if (node.left != null) queue.offer(node.left);
+                if (node.right != null) queue.offer(node.right);
+                if (n != 1) node.next = queue.peek();
+                n--;
+            }   
+        }
+    }
