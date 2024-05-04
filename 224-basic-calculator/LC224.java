@@ -1,4 +1,4 @@
-class Solution {
+class LC224 {
     // 计算器 1 只有加减和括号
     public int calculate(String s) {
         // (1+(4+5+2)-3)+(6+8)
