@@ -1,4 +1,4 @@
-class Solution {
+class LC234 {
     public boolean isPalindrome(ListNode head) {
         ListNode slow = head, fast = head;
         while (fast != null && fast.next != null) {

@@ -1,4 +1,5 @@
-class Solution {
+import java.util.*;
+class LC1504 {
     
     class TrieNode {
         private TrieNode[] children;

@@ -1,4 +1,4 @@
-class Solution {
+class LC337 {
     public int combinationSum4(int[] nums, int target) {
         int len = nums.length;
         // 状态 dp[i][j] 表示当target为j时 最后一个数选择nums[i]时 可以选择的combination的数量

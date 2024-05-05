@@ -1,4 +1,4 @@
-class Solution {
+class LC474 {
     public int findMaxForm(String[] strs, int m, int n) {
         int len = strs.length;
         int[][] count = new int[len][2];

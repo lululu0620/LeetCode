@@ -1,9 +1,10 @@
-class Solution {
+public class LC1504 {
     public int numSubmat(int[][] mat) {
         int row = mat.length, col = mat[0].length, res = 0;
         for (int j = 0; j < col; j++) {
-            colOnes = 0;
-            for (int i = 0; i < row; i++) {
+            int colOnes = 0;
+            int i = 0;
+            for (; i < row; i++) {
                 if (mat[i][j] == 0) colOnes = 0;
                 else colOnes++;
             }

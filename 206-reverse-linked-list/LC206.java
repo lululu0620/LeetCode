@@ -1,4 +1,4 @@
-class Solution {
+class LC206 {
     public ListNode reverseList(ListNode head) {
         ListNode dummy = new ListNode(0);
         ListNode node = head;
@@ -9,5 +9,14 @@ class Solution {
             node = next;
         }
         return dummy.next;
+    }
+}
+
+class ListNode {
+    int val;
+    ListNode next;
+
+    public ListNode(int val) {
+        this.val = val;
     }
 }

@@ -1,4 +1,5 @@
-class Solution { 
+import java.util.*;
+class LC32 { 
     public int longestValidParentheses(String s) {
         Stack<Integer> stack = new Stack<>();
         int start = -1, res = 0;

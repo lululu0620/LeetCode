@@ -1,4 +1,4 @@
-public class Solution {
+public class LC772 {
     // 计算器 3 有括号和加减乘除
     // 大致思想和 计算器2 相同
     // 在计算器2的基础上添加了括号

@@ -1,4 +1,4 @@
-public class Solution {
+public class LC587 {
     private int[][] points;
     public int[][] outerTrees(int[][] points) {
         this.points = points;

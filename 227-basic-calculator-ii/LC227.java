@@ -1,4 +1,4 @@
-class Solution {
+class LC227 {
     // 计算器 2 只有加减乘除
     public int calculate(String s) {
         // 3+2*2

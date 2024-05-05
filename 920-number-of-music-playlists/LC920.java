@@ -1,4 +1,4 @@
-class Solution {
+class LC920 {
     private long MOD = 1000000007;
     public int numMusicPlaylists(int N, int L, int K) {
         long dp[][] = new long[N + 1][L + 1];

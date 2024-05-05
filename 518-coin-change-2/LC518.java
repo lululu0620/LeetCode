@@ -1,4 +1,4 @@
-public class Solution {
+public class LC518 {
     public int change(int amount, int[] coins) {
         int len = coins.length;
         // 状态 dp[i][j] 表示当金额为j时 coins的index取值范围为 [0, i]时 可以选择的combination的数量
